@@ -65,8 +65,9 @@ export const Pricing = () => {
           exclusive features.
         </p>
         <div className="flex flex-col lg:flex-row gap-8 items-end">
-          {pricingTiers.map((tier) => (
+          {pricingTiers.map((tier,index) => (
             <div
+              key={index}
               className={twMerge(
                 "p-10 border border-[#f1f1f1] bg-white rounded-3xl shadow-[0_7px_14px_#EAEAEA] h-full font-medium ",
                 tier.inverse && "border-black bg-black  text-white font-normal"
@@ -129,8 +130,8 @@ export const Pricing = () => {
                   Get Started for Free
                 </button>
                 <ul>
-                  {tier.features.map((feature) => (
-                    <div className="flex items-center gap-3">
+                  {tier.features.map((feature,index) => (
+                    <div  key={index} className="flex items-center gap-3">
                       <Check className="w-5 h-5" />
                       <li className="my-3">{feature}</li>
                     </div>

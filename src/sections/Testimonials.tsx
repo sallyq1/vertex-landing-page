@@ -33,7 +33,7 @@ const testimonials = [
     username: "@morganleewhiz",
   },
   {
-    text: "Incorporating Vertex into our daily tasks was seamless. It's not just a tool; it's an enhancement to our creative process.",
+    text: "Incorporating Vertex into our daily tasks was seamless. It&aposs not just a tool; it&aposs an enhancement to our creative process.",
     imageSrc: avatar4,
     name: "Casey Jordan",
     username: "@caseyj",
@@ -96,7 +96,7 @@ const TestimonialsColumn = (props: {
 
 
       {props.testimonials.map((testimonial) => (
-        <div className="bg-white border border-[#f1f1f1] rounded-3xl p-10 h-auto w-[300px] shadow-lg flex flex-col gap-6 items-start ">
+        <div className="bg-white border border-[#f1f1f1] rounded-3xl p-10 h-auto w-[300px] shadow-lg flex flex-col gap-6 items-start">
           <p className="text-left">"{testimonial.text}"</p>
 
           <div className="flex items-center gap-3">
@@ -116,7 +116,7 @@ const TestimonialsColumn = (props: {
 
       {/* duplicate set of testimonials for animation */}
       {props.testimonials.map((testimonial) => (
-        <div className="bg-white border border-[#f1f1f1] rounded-3xl p-10 h-auto w-[300px] shadow-lg flex flex-col gap-6 items-start ">
+        <div className="bg-white border border-[#f1f1f1] rounded-3xl p-10 h-auto w-[300px] shadow-lg flex flex-col gap-6 items-start">
           <p className="text-left">"{testimonial.text}"</p>
 
           <div className="flex items-center gap-3">
