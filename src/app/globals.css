@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components
+{
+    .btn 
+    {
+        @apply px-4 py-2 rounded-lg font-semibold inline-flex justify-center tracking-tight items-center
+    }
+
+
+    .btn-primary 
+    {
+        @apply text-white bg-black
+    }
+
+    .btn-secondary 
+    {
+        @apply text-black bg-white
+    }
+
+    .btn-text
+    {
+        @apply text-black bg-tranparent;
+    }
+    
+    .link 
+    {
+        @apply font-medium
+    }
+
+    .logo-ticker
+    {
+        @apply h-8 w-auto;
+
+    }
+
+    .tag 
+    {
+        @apply text-sm md:text-base font-medium  inline-flex px-3 py-1 rounded-2xl  border-[1.7px] border-[#222]/10 tracking-tight 
+    }
+
+    .section-title 
+    {
+        @apply sm:text-4xl  md:text-5xl  lg:text-7xl font-bold tracking-tighter 
+    }
+
+    .text-gradient 
+    {
+        @apply bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text
+    }
+
+    .section-description
+    {
+        @apply md:w-[550px] sm:w-[330px]  text-xl text-[#010d3e] tracking-tight
+    }
+
+}
+
+.rainbow-gradient-shadow {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    bottom: -0.5rem;
+    left: -0.5rem;
+    background: linear-gradient(to_right,#f87bff,#fb92cf,#ffdd9b,#c2f0b1,#2fd8fe);
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    filter: blur(20px);
+  }
