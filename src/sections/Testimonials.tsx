@@ -95,9 +95,9 @@ const TestimonialsColumn = (props: {
     >
 
 
-      {props.testimonials.map((testimonial) => (
-        <div className="bg-white border border-[#f1f1f1] rounded-3xl p-10 h-auto w-[300px] shadow-lg flex flex-col gap-6 items-start">
-          <p className="text-left">"{testimonial.text}"</p>
+      {props.testimonials.map((testimonial, index) => (
+        <div key={index} className="bg-white border border-[#f1f1f1] rounded-3xl p-10 h-auto w-[300px] shadow-lg flex flex-col gap-6 items-start">
+          <p className="text-left">&quot{testimonial.text}&quot</p>
 
           <div className="flex items-center gap-3">
             <Image
@@ -115,9 +115,9 @@ const TestimonialsColumn = (props: {
       ))}
 
       {/* duplicate set of testimonials for animation */}
-      {props.testimonials.map((testimonial) => (
-        <div className="bg-white border border-[#f1f1f1] rounded-3xl p-10 h-auto w-[300px] shadow-lg flex flex-col gap-6 items-start">
-          <p className="text-left">"{testimonial.text}"</p>
+      {props.testimonials.map((testimonial,index) => (
+        <div key={index} className="bg-white border border-[#f1f1f1] rounded-3xl p-10 h-auto w-[300px] shadow-lg flex flex-col gap-6 items-start">
+          <p className="text-left">&quot{testimonial.text}&quot</p>
 
           <div className="flex items-center gap-3">
             <Image
