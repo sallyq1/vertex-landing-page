@@ -28,7 +28,7 @@ const Hero = () => {
           </h1>
 
           <p className="section-description mt-6 md:w-[500px] w-[400px]">
-          Experience the power of simplicity with Vertex. Whether you&aposre a beginner or a seasoned pro, Vertex makes 3D modeling accessible and enjoyable.
+          Experience the power of simplicity with Vertex. Whether you're a beginner or a seasoned pro, Vertex makes 3D modeling accessible and enjoyable.
           </p>
 
           <div className="flex gap-2 items-center mt-[30px]">
